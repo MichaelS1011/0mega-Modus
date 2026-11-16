@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-label="The three rigor modes QUICK, STANDARD and DEEP">
+<title>Three rigor modes: QUICK, STANDARD, DEEP</title>
+<rect width="1000" height="480" fill="#EADCC4"/>
+<text x="24" y="38" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#8C1E14">Three rigor modes — proportionality, not ceremony</text>
+<rect x="24" y="64" width="300" height="344" rx="8" fill="#F7F0E2" stroke="#8C1E14" stroke-width="1.5"/>
+<rect x="24" y="64" width="300" height="44" fill="#8C1E14"/>
+<text x="174" y="93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#EADCC4" text-anchor="middle" letter-spacing="1.2">QUICK</text>
+<text x="42" y="132" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Chosen when</text>
+<text x="42" y="154" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">Bounded, low-stakes,</text>
+<text x="42" y="172" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">reversible, adequately</text>
+<text x="42" y="190" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">specified</text>
+<line x1="42" y1="206" x2="306" y2="206" stroke="#8C1E14" stroke-width="1"/>
+<text x="42" y="230" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Adds</text>
+<text x="42" y="252" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">Direct answer, honest</text>
+<text x="42" y="270" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">limitations, and the</text>
+<text x="42" y="288" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">smallest useful check</text>
+<text x="42" y="306" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">that actually ran.</text>
+<text x="42" y="336" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Deliberately not added</text>
+<text x="42" y="358" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">No pre-mortems, no</text>
+<text x="42" y="376" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">status blocks, no method</text>
+<text x="42" y="394" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">names — no method theatre.</text>
+<rect x="352" y="64" width="300" height="344" rx="8" fill="#F7F0E2" stroke="#8C1E14" stroke-width="1.5"/>
+<rect x="352" y="64" width="300" height="44" fill="#8C1E14"/>
+<text x="502" y="93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#EADCC4" text-anchor="middle" letter-spacing="1.2">STANDARD</text>
+<text x="370" y="132" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Chosen when</text>
+<text x="370" y="154" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">Multi-step work,</text>
+<text x="370" y="172" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">moderate ambiguity,</text>
+<text x="370" y="190" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">moderate consequences</text>
+<line x1="370" y1="206" x2="634" y2="206" stroke="#8C1E14" stroke-width="1"/>
+<text x="370" y="230" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Adds</text>
+<text x="370" y="252" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">Blocking gaps clarified,</text>
+<text x="370" y="270" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">safe assumptions stated,</text>
+<text x="370" y="288" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">brief plan, meaningful</text>
+<text x="370" y="306" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">parts validated.</text>
+<text x="370" y="336" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Deliberately not added</text>
+<text x="370" y="358" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">No formal risk register,</text>
+<text x="370" y="376" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">no status block on</text>
+<text x="370" y="394" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">every function</text>
+<rect x="680" y="64" width="300" height="344" rx="8" fill="#F7F0E2" stroke="#8C1E14" stroke-width="1.5"/>
+<rect x="680" y="64" width="300" height="44" fill="#8C1E14"/>
+<text x="830" y="93" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" font-weight="bold" fill="#EADCC4" text-anchor="middle" letter-spacing="1.2">DEEP</text>
+<text x="698" y="132" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Chosen when</text>
+<text x="698" y="154" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">Complex, high-impact,</text>
+<text x="698" y="172" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">public, costly, or</text>
+<text x="698" y="190" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">hard to reverse</text>
+<line x1="698" y1="206" x2="962" y2="206" stroke="#8C1E14" stroke-width="1"/>
+<text x="698" y="230" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Adds</text>
+<text x="698" y="252" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">Acceptance criteria, real</text>
+<text x="698" y="270" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">options, pre-mortem,</text>
+<text x="698" y="288" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">approval gates, evidence</text>
+<text x="698" y="306" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C">per deliverable</text>
+<text x="698" y="336" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#8C1E14">Deliberately not added</text>
+<text x="698" y="358" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">No method catalogue —</text>
+<text x="698" y="376" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">the router stays</text>
+<text x="698" y="394" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-style="italic" fill="#4A120C">invisible by default</text>
+<line x1="40" y1="440" x2="940" y2="440" stroke="#8C1E14" stroke-width="2"/>
+<path d="M948,440 l-12,-7 v14Z" fill="#8C1E14"/>
+<text x="490" y="466" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="16" fill="#8C1E14" text-anchor="middle">stakes and irreversibility rise — pick the lowest mode that responsibly handles the task</text>
+</svg>

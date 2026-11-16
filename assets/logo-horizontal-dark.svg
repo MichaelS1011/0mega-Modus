@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="120" viewBox="0 0 480 120" role="img" aria-label="OMEGA Modus logo">
+<title>OMEGA Modus logo</title>
+<rect width="480" height="120" fill="#24100B"/>
+<path d="M93.7,32.1 L54.3,87.9" fill="none" stroke="#EADCC4" stroke-width="9.84375" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="74" cy="60" rx="27.6" ry="32.8" fill="none" stroke="#EADCC4" stroke-width="9.8"/>
+<text x="140" y="78" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="40" font-weight="bold" fill="#EADCC4" text-anchor="start" letter-spacing="1.5">ØMEGA</text>
+<text x="314" y="78" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="38" fill="#C87B66" text-anchor="start">Modus</text>
+</svg>

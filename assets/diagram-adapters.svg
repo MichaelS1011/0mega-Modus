@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="360" viewBox="0 0 1000 360" role="img" aria-label="Seven OMEGA Modus platform adapters">
+<title>Seven OMEGA Modus platform adapters</title>
+<rect width="1000" height="360" fill="#EADCC4"/>
+<text x="24" y="30" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" fill="#8C1E14" text-anchor="start">Seven platform adapters — one protocol, native carriers</text>
+<text x="976" y="30" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#4A120C" text-anchor="end">7 adapters ship with the framework</text>
+<line x1="340" y1="46" x2="340" y2="338" stroke="#8C1E14" stroke-width="1.5"/>
+<text x="40" y="66" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#8C1E14" text-anchor="start" letter-spacing="1.2">PLATFORM</text>
+<text x="356" y="66" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#8C1E14" text-anchor="start" letter-spacing="1.2">WHERE THE INSTRUCTIONS LIVE</text>
+<line x1="24" y1="74" x2="976" y2="74" stroke="#8C1E14" stroke-width="1.5"/>
+<rect x="24" y="82" width="952" height="36" rx="0" fill="#F7F0E2"/>
+<circle cx="46" cy="100" r="12" fill="#8C1E14"/><text x="46" y="106" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#EADCC4" text-anchor="middle">1</text>
+<text x="68" y="106" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A120C" text-anchor="start">Codex</text>
+<text x="356" y="106" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#8C1E14" text-anchor="start">AGENTS.md  +  .agents/skills/</text>
+<circle cx="46" cy="136" r="12" fill="#8C1E14"/><text x="46" y="142" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#EADCC4" text-anchor="middle">2</text>
+<text x="68" y="142" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A120C" text-anchor="start">Claude Code</text>
+<text x="356" y="142" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#8C1E14" text-anchor="start">.claude/skills/&lt;name&gt;/SKILL.md</text>
+<rect x="24" y="154" width="952" height="36" rx="0" fill="#F7F0E2"/>
+<circle cx="46" cy="172" r="12" fill="#8C1E14"/><text x="46" y="178" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#EADCC4" text-anchor="middle">3</text>
+<text x="68" y="178" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A120C" text-anchor="start">Gemini CLI</text>
+<text x="356" y="178" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#8C1E14" text-anchor="start">GEMINI.md  +  .gemini/skills/</text>
+<circle cx="46" cy="208" r="12" fill="#8C1E14"/><text x="46" y="214" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#EADCC4" text-anchor="middle">4</text>
+<text x="68" y="214" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A120C" text-anchor="start">Cursor</text>
+<text x="356" y="214" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#8C1E14" text-anchor="start">.cursor/rules/*.mdc</text>
+<rect x="24" y="226" width="952" height="36" rx="0" fill="#F7F0E2"/>
+<circle cx="46" cy="244" r="12" fill="#8C1E14"/><text x="46" y="250" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#EADCC4" text-anchor="middle">5</text>
+<text x="68" y="250" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A120C" text-anchor="start">GitHub Copilot</text>
+<text x="356" y="250" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#8C1E14" text-anchor="start">.github/copilot-instructions.md  +  .github/skills/</text>
+<circle cx="46" cy="280" r="12" fill="#8C1E14"/><text x="46" y="286" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#EADCC4" text-anchor="middle">6</text>
+<text x="68" y="286" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A120C" text-anchor="start">ChatGPT</text>
+<text x="356" y="286" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#8C1E14" text-anchor="start">instructions field</text>
+<rect x="24" y="298" width="952" height="36" rx="0" fill="#F7F0E2"/>
+<circle cx="46" cy="316" r="12" fill="#8C1E14"/><text x="46" y="322" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" font-weight="bold" fill="#EADCC4" text-anchor="middle">7</text>
+<text x="68" y="322" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" font-weight="bold" fill="#4A120C" text-anchor="start">Generic</text>
+<text x="356" y="322" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="17" fill="#8C1E14" text-anchor="start">combined prompt</text>
+<line x1="24" y1="338" x2="976" y2="338" stroke="#8C1E14" stroke-width="1.5"/>
+</svg>

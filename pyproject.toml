@@ -1,0 +1,10 @@
+[project]
+name = "omega-modus"
+version = "1.0.0"
+description = "A platform-adaptable instruction framework for disciplined AI workflows"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+readme = "README.md"
+
+[tool.ruff]
+line-length = 100
