@@ -38,9 +38,21 @@ Before working, the agent fixes a rigor mode. The seven functions are operating 
 
 ## See it in 36 seconds
 
-An unverified claim gets cross-checked, the ASK/CHECK/REFUSE rules appear, a real test run turns green, and the clone command closes the clip.
+[Watch the 36-second clip](assets/clip-terminal-proof.mp4): an unverified claim gets cross-checked, the ASK/CHECK/REFUSE rules appear, a real test run turns green, and the clone command closes the clip.
 
-![ØMEGA Modus launch clip: a claim cross-checked against evidence, the ASK/CHECK/REFUSE rules, a passing test run, and the clone command](assets/clip-terminal-proof.mp4)
+## What you get
+
+Each of these is a written rule in the protocol, not a hope about model behaviour:
+
+- **You can see what was checked.** The assistant reports what it actually ran and says "not verified" where it checked nothing. A test that never ran never appears as passed.
+- **Reproduce first, fix second.** On a failure it pins the observable problem and reproduces it before theorising, so fixes target a behaviour you saw, not a guess.
+- **A guess never becomes a fact.** Causes are labelled guessed or verified. If something is only plausible, it stays labelled as such, and you decide whether more checking is worth it.
+- **Three kinds of fix, kept apart.** Stopping the pain, correcting the cause, and preventing recurrence are reported separately — so "a restart helped" is not sold as "we understand why it broke".
+- **You are asked before anything irreversible.** Deleting, pushing, publishing and spending wait for your approval. Safe, small, reversible steps just run; over-checking a trivial task counts as a failure, not as diligence.
+- **Reuse is checked before building.** A plan has to consider an existing library, an existing feature, buying, deferring, or doing nothing, and effort arrives as a range with the basis named — not as a confident number.
+- **The same rules on every assistant.** One protocol, seven adapters; the behaviour you learn once transfers between platforms. Apache-2.0, plain text, no binaries, no account, no cloud service.
+
+What it does not promise: being faster or cheaper. In the one paired run recorded below, the framework's answer was slightly longer, not shorter. The gain in that run was decision material you can act on and audit.
 
 ## Three rigor modes
 

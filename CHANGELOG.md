@@ -2,6 +2,11 @@
 
 All notable changes to ØMEGA Modus are documented here.
 
+## [Unreleased]
+
+### Changed
+- README: added a plain-language "What you get" section stating the user-facing behaviours the protocol rules guarantee, with an explicit statement that the framework does not promise being faster or cheaper; the launch clip is linked as a file link because image embeds of MP4 files do not render on GitHub.
+
 ## [1.1.0] — 2026-11-17
 
 ### Changed
