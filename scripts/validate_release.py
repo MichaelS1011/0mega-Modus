@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Static integrity checks for OMEGA Modus source and release artefacts."""
+"""Static integrity checks for OMEGA Modus source and release artefacts.
+
+The version is declared exactly once, in pyproject.toml; see scripts/_version.py.
+"""
 from __future__ import annotations
 
 import hashlib
@@ -7,8 +10,10 @@ from pathlib import Path
 import sys
 import zipfile
 
+from _version import read_version
+
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.0.0"
+VERSION = read_version()
 OUTPUT = ROOT / "dist" / f"omega-modus-v{VERSION}"
 REQUIRED_METHODS = ["PDCA", "Five Whys", "Ishikawa", "Poka-Yoke", "FMEA", "Pareto", "A3", "Kaizen"]
 REQUIRED_DIRS = ["skills/omega-modus/references", "evaluation/scenarios", "scripts", "docs"]
@@ -57,8 +62,8 @@ def main() -> None:
             fail(f"quality method not covered: {method}")
 
     scenario_files = list((ROOT / "evaluation/scenarios").glob("S*.md"))
-    if len(scenario_files) != 12:
-        fail(f"expected 12 evaluation scenarios, found {len(scenario_files)}")
+    if len(scenario_files) < 12:
+        fail(f"expected at least 12 evaluation scenarios, found {len(scenario_files)}")
 
     marker = OUTPUT / ".omegamodus-generated-by-build_release.py"
     if not marker.is_file():
@@ -108,7 +113,7 @@ def main() -> None:
         if "SHA256SUMS.txt" not in members:
             fail("all-platform archive is missing SHA256SUMS.txt")
 
-    print("PASS: source structure, quality methods, 12 scenarios, adapter bundles, archives, and checksums.")
+    print("PASS: source structure, quality methods, evaluation scenarios, adapter bundles, archives, and checksums.")
     print("NOTE: these checks validate packaging and repository integrity, not model behavior or live platform activation.")
 
 

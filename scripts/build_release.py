@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Build OMEGA Modus v1.0.0 adapter bundles and release archives safely."""
+"""Build OMEGA Modus adapter bundles and release archives safely.
+
+The version is declared exactly once, in pyproject.toml; see scripts/_version.py.
+"""
 from __future__ import annotations
 
 import hashlib
@@ -7,8 +10,10 @@ import shutil
 import zipfile
 from pathlib import Path
 
+from _version import read_version, tag_gate
+
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = "1.0.0"
+VERSION = read_version()
 DIST_ROOT = ROOT / "dist"
 OUTPUT = DIST_ROOT / f"omega-modus-v{VERSION}"
 MARKER = ".omegamodus-generated-by-build_release.py"
@@ -226,6 +231,7 @@ def build_archives() -> None:
 def main() -> None:
     if not (SKILL / "SKILL.md").is_file():
         raise SystemExit(f"Canonical skill not found: {SKILL}")
+    tag_gate(VERSION)
     prepare_output()
     build_bundles()
     build_archives()

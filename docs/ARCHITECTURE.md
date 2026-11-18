@@ -37,7 +37,7 @@ Adapters map the same core behavior to the native instruction mechanism of each 
 
 ### Release builder
 
-`scripts/build_release.py` creates self-contained adapter directories under `dist/omega-modus-v1.0.0/bundles/`, seven platform ZIPs, a complete source ZIP, and SHA-256 checksums. It writes only to its versioned output directory and refuses to remove that directory unless its own generation marker is present. Unrelated files already in `dist/` are preserved. The builder uses only the Python standard library.
+`scripts/build_release.py` creates self-contained adapter directories under `dist/omega-modus-v1.1.0/bundles/`, seven platform ZIPs, a complete source ZIP, and SHA-256 checksums. It writes only to its versioned output directory and refuses to remove that directory unless its own generation marker is present. Unrelated files already in `dist/` are preserved. The builder uses only the Python standard library.
 
 ### Validation and evaluation
 
@@ -45,7 +45,7 @@ Adapters map the same core behavior to the native instruction mechanism of each 
 
 ## Behavior model
 
-The protocol follows a proportionality principle: choose the lowest level of rigor that responsibly handles the task. Deep analysis is not a virtue when it adds no decision value. Formal methods are selected by problem signal, not displayed as a fixed checklist.
+The protocol follows a proportionality principle: choose the lowest level of rigor that responsibly handles the task. Deep analysis is not a virtue when it adds no decision value. Formal methods are routed by task signal through fixed rules in the skill, and are never displayed as a method catalogue.
 
 ## State and persistence
 

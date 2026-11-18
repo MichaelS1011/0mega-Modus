@@ -2,6 +2,23 @@
 
 All notable changes to ØMEGA Modus are documented here.
 
+## [1.1.0] — 2026-11-17
+
+### Changed
+- Release version has a single source: `pyproject.toml`. Build and validation scripts derive it from there, and a tag gate fails the build when the built commit is tagged with a different version.
+- Evaluation record template now covers S13–S15, and a test keeps the template rows in sync with the scenario files.
+- README: 36-second launch clip (`assets/clip-terminal-proof.mp4`) embedded after “How it works”, and a “What it costs” section stating protocol sizes and the one paired run’s lengths, labeled as a preliminary single-run observation.
+- Operating contract rule 6 now requires applying clearly safe, reversible fixes that are encountered while executing, verifying them, and reporting them as separate items; riskier findings stay recommendations. In A/B demo runs on 2026-11-16 (single run per condition) this was the only observed behavioral difference; full benchmark pending.
+- Method routing is now a fixed protocol rule, not only a reference pointer: planning, option decisions, prioritization, and requirements have explicit routing rules, and failure investigation requires reproducing the problem, labeling causal hypotheses (assumed, supported, verified, open), and separating immediate relief, cause correction, and system improvement.
+- Planning rules now require checking reuse (library, existing feature, off-the-shelf) before proposing to build, including or explicitly ruling out deferring/doing nothing with a one-line reason, and commitments as range estimates with a stated basis; in the 2026-11-16/17 planning A/B runs (single run per condition) both conditions silently skipped the reuse and do-nothing options, and the first protocol-guided run estimated without a basis.
+- Updated S04 expected markers to include hypothesis labels and layered countermeasures; updated S15 markers to include the reuse/do-nothing check and range estimates.
+
+### Added
+- Tests: single-source version declaration, self-contained ChatGPT instructions, generic prompt reference coverage, and template/scenario consistency.
+- `docs/PLATFORM_COMPATIBILITY.md`: manual activation checklist for the copy/paste adapters, with the surfaces explicitly marked as not hand-verified until the checklist is run per product surface.
+- Evaluation scenario S13 (incidental safe fix), S14 (unverified green claim at a release gate), and S15 (planning and option decision).
+- Quality Intelligence router rows and playbooks for work breakdown with a first verifiable increment, decision matrix, impact/effort and Pareto prioritization, assumptions with acceptance criteria, reuse check before build, range estimates, and result-first briefings.
+
 ## [1.0.0] — 2026-11-15
 
 ### Added

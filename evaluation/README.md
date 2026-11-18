@@ -29,7 +29,7 @@ Regardless of score, flag any of the following:
 
 ## Files
 
-- `scenarios/` contains twelve task prompts and expected behavioral markers.
+- `scenarios/` contains fifteen task prompts and expected behavioral markers.
 - `RESULTS_TEMPLATE.md` is a blank record; no benchmark results are prefilled.
 
 ## Reproducibility record

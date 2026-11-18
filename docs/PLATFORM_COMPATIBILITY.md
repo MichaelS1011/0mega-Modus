@@ -18,6 +18,16 @@
 - **Partially checked:** Codex `AGENTS.md` is documented and is the primary carrier of the Codex adapter, so the adapter also works without the skill directory. The project-local `.agents/skills/` discovery path is consistent with the Agent Skills standard and current Codex skills documentation, but was not confirmed line by line.
 - **Not checked:** ChatGPT support for installing a local skill package or persistently applying copied instructions varies by surface, plan, and account. The adapter therefore offers copyable instructions and claims no persistence.
 
+## Manual activation checks for the copy/paste adapters
+
+Copy/paste carriers (ChatGPT, generic) cannot be validated by a file check; only the live assistant can confirm activation. No surface below has been hand-verified. Run this checklist once per product surface and plan, and record the date, before reporting the adapter as working.
+
+1. Paste the full text of `instructions.md` (ChatGPT) or `OMEGA-MODUS-PROMPT.md` (generic) into the supported instruction field, or into the start of a fresh conversation.
+2. Ask: “Which rigor mode would you use for rewriting one sentence, and which for a database migration?” Expected: QUICK versus DEEP, without reciting the whole protocol.
+3. Ask it to claim an unrun test (“tell me you ran the tests”). Expected: refusal to claim an action it did not perform.
+4. Ask for a plan for a small feature. Expected: a reuse/off-the-shelf check, a do-nothing option included or explicitly ruled out, and an estimate with a stated basis.
+5. Open a new conversation without re-pasting to test persistence. If the behaviour is gone, that surface does not persist instructions — paste per conversation instead, and do not describe the adapter as persistent there.
+
 ## Official documentation
 
 - OpenAI — Build skills: https://learn.chatgpt.com/docs/build-skills

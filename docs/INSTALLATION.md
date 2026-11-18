@@ -8,13 +8,13 @@ From the repository root:
 python scripts/build_release.py
 ```
 
-This creates `dist/omega-modus-v1.0.0/` without deleting unrelated files already present in `dist/`. Use the matching bundle under `dist/omega-modus-v1.0.0/bundles/`. ZIP archives for every adapter and the complete source tree are written to `dist/omega-modus-v1.0.0/archives/`. The instructions below describe the general installation approach; exact UI labels may differ by app version.
+This creates `dist/omega-modus-v1.1.0/` without deleting unrelated files already present in `dist/`. Use the matching bundle under `dist/omega-modus-v1.1.0/bundles/`. ZIP archives for every adapter and the complete source tree are written to `dist/omega-modus-v1.1.0/archives/`. The instructions below describe the general installation approach; exact UI labels may differ by app version.
 
 ## 2. Choose one primary adapter
 
 ### OpenAI Codex
 
-Use the `dist/omega-modus-v1.0.0/bundles/codex/` bundle.
+Use the `dist/omega-modus-v1.1.0/bundles/codex/` bundle.
 
 - Copy `AGENTS.md` into the root of the target project, or merge its short guidance into an existing `AGENTS.md`.
 - Copy `.agents/skills/omega-modus/` into the target project's `.agents/skills/` directory for project scope, or the supported user-level skill directory for user scope.
@@ -24,7 +24,7 @@ Codex uses `AGENTS.md` for persistent project guidance and Agent Skills for reus
 
 ### Claude Code
 
-Use the `dist/omega-modus-v1.0.0/bundles/claude-code/` bundle.
+Use the `dist/omega-modus-v1.1.0/bundles/claude-code/` bundle.
 
 - Copy `.claude/skills/omega-modus/` into the target project's `.claude/skills/` directory for project scope, or your user-level Claude skills directory for personal scope.
 - Start or refresh the Claude Code session.
@@ -34,7 +34,7 @@ Claude Code also supports `CLAUDE.md` project instructions. This release uses a 
 
 ### Gemini CLI
 
-Use the `dist/omega-modus-v1.0.0/bundles/gemini-cli/` bundle.
+Use the `dist/omega-modus-v1.1.0/bundles/gemini-cli/` bundle.
 
 - Copy `GEMINI.md` into your project root, or merge its guidance into an existing file.
 - For project scope, copy `.agents/skills/omega-modus/` into the target project's `.agents/skills/` directory. For user scope, copy it into `~/.agents/skills/` (or use the corresponding Gemini CLI skill-management command).
@@ -44,7 +44,7 @@ Use the `dist/omega-modus-v1.0.0/bundles/gemini-cli/` bundle.
 
 ### Cursor
 
-Use the `dist/omega-modus-v1.0.0/bundles/cursor/` bundle.
+Use the `dist/omega-modus-v1.1.0/bundles/cursor/` bundle.
 
 - Copy `.cursor/rules/omega-modus.mdc` into the target project's `.cursor/rules/` directory.
 - Open Cursor and confirm the rule is enabled in the Rules interface.
@@ -54,7 +54,7 @@ The `.mdc` file includes frontmatter and is configured as an always-applied proj
 
 ### GitHub Copilot
 
-Use `dist/omega-modus-v1.0.0/bundles/github-copilot/`.
+Use `dist/omega-modus-v1.1.0/bundles/github-copilot/`.
 
 - Copy `.github/copilot-instructions.md` into the target project's `.github/` directory.
 - Copy `.github/skills/omega-modus/` into the target project's `.github/skills/` directory where Agent Skills are supported.
@@ -65,7 +65,7 @@ Support differs by Copilot client and feature. The adapter is a repository-wide 
 
 ### ChatGPT
 
-Use `dist/omega-modus-v1.0.0/bundles/chatgpt/`.
+Use `dist/omega-modus-v1.1.0/bundles/chatgpt/`.
 
 - For a supported Skills-enabled ChatGPT desktop environment, install the included `SKILL.md` skill folder using that environment's skill workflow.
 - For ChatGPT surfaces without skill installation, copy the contents of `instructions.md` into the relevant user/project instruction field or paste it at the start of a conversation.
@@ -75,7 +75,7 @@ Availability of Skills and customization controls varies by ChatGPT product surf
 
 ### Generic AI assistant
 
-Use `dist/omega-modus-v1.0.0/bundles/generic/OMEGA-MODUS-PROMPT.md`. Paste it into the assistant's system/project instruction field where available, or into a new conversation. The assistant must support custom instructions for persistence; otherwise it applies only to that conversation.
+Use `dist/omega-modus-v1.1.0/bundles/generic/OMEGA-MODUS-PROMPT.md`. Paste it into the assistant's system/project instruction field where available, or into a new conversation. The assistant must support custom instructions for persistence; otherwise it applies only to that conversation.
 
 ## 3. Avoid duplicate activation
 

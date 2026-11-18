@@ -45,8 +45,9 @@
 <line x1="432" y1="150" x2="432" y2="194" stroke="#8C1E14" stroke-width="2"/>
 <rect x="528" y="196" width="144" height="96" rx="8" fill="#F7F0E2" stroke="#8C1E14" stroke-width="1.5"/>
 <text x="600" y="222" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="21" font-weight="bold" fill="#4A120C" text-anchor="middle" letter-spacing="0.5">STRATEGIZE</text>
-<text x="600" y="252" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#8C1E14" text-anchor="middle">pre-mortem</text>
-<text x="600" y="272" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20" fill="#8C1E14" text-anchor="middle">when risky</text>
+<text x="600" y="248" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#8C1E14" text-anchor="middle">fixed routing,</text>
+<text x="600" y="266" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#8C1E14" text-anchor="middle">pre-mortem</text>
+<text x="600" y="284" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="#8C1E14" text-anchor="middle">if risky</text>
 <line x1="674" y1="244" x2="694" y2="244" stroke="#8C1E14" stroke-width="2"/>
 <path d="M694.0,244.0 L685.0,248.3 L685.0,239.7Z" fill="#8C1E14"/>
 <line x1="600" y1="150" x2="600" y2="194" stroke="#8C1E14" stroke-width="2"/>

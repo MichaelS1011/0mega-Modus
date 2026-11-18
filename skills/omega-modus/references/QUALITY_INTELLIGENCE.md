@@ -6,10 +6,17 @@ Quality Intelligence selects a small number of suitable problem-solving and impr
 
 The toolkit combines methods used in quality management and continuous improvement. Their histories and origins differ; do not describe every method as exclusively Japanese.
 
-## Router: choose by problem signal
+## Router: choose by task signal
 
 | Signal | Preferred method(s) | Expected output |
 |---|---|---|
+| A new multi-step task needs planning | Work breakdown + first verifiable increment | Ordered units, chosen first increment, its check |
+| A choice between materially different options | Weighted criteria / decision matrix | Transparent criteria and weights, scored options, recommendation with sensitivity note |
+| Many ideas, requests, or defects to prioritize | Impact/effort; Pareto where data exists | Ranked list with reasons and data caveats |
+| Requirements are vague but safe to start | Assumptions + acceptance criteria | Stated assumptions, checkable criteria |
+| About to build something new | Reuse check before build | Off-the-shelf, existing feature, and library options considered or explicitly ruled out, with reasons |
+| A plan needs an estimate | Range estimate with stated basis | Range, basis, largest estimate drivers |
+| Reporting or summarizing for an audience | Result-first briefing | Conclusion first, facts separated from judgments, next steps with a check |
 | A process or result needs controlled improvement | PDCA/PDSA | Baseline, change, check, decision to adapt or standardize |
 | A specific failure has occurred and its cause is unclear | Five Whys | Evidence-backed causal chain or explicitly unresolved hypotheses |
 | Several causal families may contribute | Ishikawa | Structured cause map, evidence gaps, investigation priorities |
@@ -21,6 +28,8 @@ The toolkit combines methods used in quality management and continuous improveme
 | Process variation or data structure matters | Basic QC tools | Appropriate map, check sheet, chart, or distribution summary |
 
 Use the minimum sufficient set. Methods may be combined when they answer different questions, e.g. Five Whys + Poka-Yoke + PDCA for a repeated operational defect. Do not run all methods by default.
+
+Where a hypothesis bears on a decision, label it **assumed**, **supported**, **verified**, or **open**, and keep the labels honest: a plausible story stays assumed or supported until a check makes it verified.
 
 ## 1. PDCA / PDSA — improvement loop
 
@@ -109,6 +118,26 @@ Select only when they fit available evidence:
 - **Control chart / run chart:** time-ordered data; use sound methods and adequate observations before making claims about process stability.
 
 Do not create statistical confidence, process-control limits, or sample-size claims without the necessary data and method.
+
+## 10. Work breakdown and first verifiable increment
+
+Break the deliverable into the smallest independently checkable units. Sequence by dependency and by uncertainty reduction, then execute the shortest increment that proves something. Define the confirming check before starting. Where the plan commits to effort or timing, estimate as a range with a stated basis (similar work, measured throughput, expert judgment) and name the largest driver of the estimate. Use schedule machinery only when real timeline dependencies exist; otherwise a short ordered list is sufficient.
+
+## 11. Decision matrix — weighing options
+
+List genuinely different options, including reuse (library, existing feature, off-the-shelf), buying, deferring, and "do nothing" where they are real candidates; rule out any unrealistic option in one line with the reason. Define criteria and weights before scoring; score against evidence and record why. State whether a small weight change would flip the ranking and which criterion would then deserve more argument. A matrix structures a decision; it does not replace the human's.
+
+## 12. Impact/effort and Pareto prioritization
+
+Rank many ideas or requests by impact against effort; start with high-impact, low-effort items and defer low-impact, high-effort ones explicitly. Where categorized data exists (defects, tickets, complaints), rank categories by frequency or impact, attack the top category, and state what the data cannot see.
+
+## 13. Assumptions and acceptance criteria
+
+When requirements are vague but safe to start, state the assumptions being made and formulate checkable acceptance criteria (Given/When/Then for behavior). Ask no more than the few questions whose answers materially change the result.
+
+## 14. Result-first briefing
+
+For reports and summaries, lead with the answer or the requested artifact in one paragraph, then evidence, limits, and next steps. Separate observed facts from judgments. Give actions an owner and a check that shows completion. Size the report to the audience; cut repetition before detail.
 
 ## Disclosure policy
 

@@ -31,10 +31,16 @@ Before working, the agent fixes a rigor mode. The seven functions are operating 
 | **SCAN** | Goal, constraints, stakes, ambiguity, acceptance criteria |
 | **VERIFY** | Separate what is known, inferred and assumed |
 | **THINK** | Options and their trade-offs, including one counter-explanation |
-| **STRATEGIZE** | Route to a fitting method, or to none |
+| **STRATEGIZE** | Route to a fitting method by fixed signal rules, or to none |
 | **EXECUTE** | Smallest reversible step that moves the task forward |
 | **VALIDATE** | Check against the acceptance criteria; executed, not proposed |
 | **REPORT** | Result, evidence, what is still open |
+
+## See it in 36 seconds
+
+An unverified claim gets cross-checked, the ASK/CHECK/REFUSE rules appear, a real test run turns green, and the clone command closes the clip.
+
+![ØMEGA Modus launch clip: a claim cross-checked against evidence, the ASK/CHECK/REFUSE rules, a passing test run, and the clone command](assets/clip-terminal-proof.mp4)
 
 ## Three rigor modes
 
@@ -50,6 +56,14 @@ Before working, the agent fixes a rigor mode. The seven functions are operating 
 
 Over-processing a simple task is a failure, not extra diligence. The project calls it *method theatre*.
 
+## Methods by signal, not by habit
+
+<p align="center">
+  <img src="assets/diagram-method-routing.svg" alt="Fixed routing rules: five steps for new or multi-step work, four for failures, each failure signal naming one method" width="900">
+</p>
+
+Fixed rules decide when a method applies — the agent neither picks arbitrarily nor shows a catalogue. Planning work fixes acceptance criteria up front, compares genuinely different options including reuse, buy, defer and do-nothing, starts from the shortest verifiable increment, and gives effort as a range with a stated basis. Failure work reproduces the problem first, routes the cause hunt by signal (Five Whys, Ishikawa, FMEA, Pareto, Poka-Yoke, PDCA), labels every hypothesis as assumed, supported, verified or open, and ends with countermeasures on three layers. The method names stay out of the answer; what is visible are conclusions and evidence.
+
 ## Install
 
 ```bash
@@ -58,7 +72,7 @@ cd 0mega-Modus
 python scripts/build_release.py
 ```
 
-Then pick **one** adapter in [docs/INSTALLATION.md](docs/INSTALLATION.md) and copy the generated bundle from `dist/omega-modus-v1.0.0/bundles/` into that platform's configuration location. Start a new session so the instructions load.
+Then pick **one** adapter in [docs/INSTALLATION.md](docs/INSTALLATION.md) and copy the generated bundle from `dist/omega-modus-v1.1.0/bundles/` into that platform's configuration location. Start a new session so the instructions load.
 
 The tooling is standard-library Python 3.10+, no dependencies, no binaries. Repository checks:
 
@@ -87,9 +101,15 @@ Correct behaviour: symptoms separated from verified causes, one fitting method i
 
 Seven targets ship: Codex, Claude Code, Gemini CLI, Cursor, GitHub Copilot, ChatGPT-compatible instructions, and a generic combined prompt. [docs/PLATFORM_COMPATIBILITY.md](docs/PLATFORM_COMPATIBILITY.md) records which carrier is documented by the vendor and which is only checked locally. Claims there are deliberately narrower than the marketing would like.
 
+## What it costs
+
+The framework is text, and text has a price. The canonical `SKILL.md` is about 6.7 KB (roughly 1,700 tokens by a characters/4 estimate — an estimate, not a tokenizer count); the four reference documents add about 24 KB. File-based adapters (Codex, Claude Code, Gemini CLI, Cursor, Copilot) carry a condensed summary and open references on demand; the generic combined prompt loads the whole text at once (about 31 KB).
+
+One paired planning run on 2026-11-16 — a single run per condition, same model, pre-registered rubric, recorded as an observation and not as a benchmark: with the framework the answer was 9,674 characters (≈2,400 estimated tokens) versus 7,430 (≈1,900) without, 4:54 versus 4:12 wall time, and 4 versus 3 self-reported tool calls, scoring 9/9 versus 6/9 on the demo rubric. The framework made that answer longer, not faster; what it added was visible decision material — a do-nothing baseline, an off-the-shelf check, an estimate with a named driver, and stated limits. The run artefacts join the repository with the full benchmark; until then this paragraph is the only effectiveness-adjacent data this project publishes, and it is preliminary by construction.
+
 ## Evaluate before trusting it
 
-[evaluation/](evaluation/README.md) contains twelve scenarios and a rubric: seven dimensions, 0–2 each, 14 points. Run them yourself with and without the framework on your own model and report the numbers you get.
+[evaluation/](evaluation/README.md) contains fifteen scenarios and a rubric: seven dimensions, 0–2 each, 14 points. Run them yourself with and without the framework on your own model and report the numbers you get.
 
 This README publishes **no percentages**. Effectiveness numbers appear only from documented runs committed to the repository, and a documented negative result stays in. Fabricated evidence — a test that did not run, a source that does not exist — is a critical failure of the framework and of anyone publishing it.
 

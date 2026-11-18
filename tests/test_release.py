@@ -5,7 +5,10 @@ import unittest
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "dist" / "omega-modus-v1.0.0"
+sys.path.insert(0, str(ROOT / "scripts"))
+from _version import read_version  # noqa: E402
+
+OUTPUT = ROOT / "dist" / f"omega-modus-v{read_version()}"
 
 
 class ReleaseIntegrityTests(unittest.TestCase):
@@ -51,9 +54,37 @@ class ReleaseIntegrityTests(unittest.TestCase):
             with self.subTest(method=method):
                 self.assertIn(method, content)
 
-    def test_twelve_scenarios_exist(self):
+    def test_minimum_twelve_scenarios_exist(self):
         scenarios = list((ROOT / "evaluation/scenarios").glob("S*.md"))
-        self.assertEqual(len(scenarios), 12)
+        self.assertGreaterEqual(len(scenarios), 12)
+
+    def test_results_template_covers_every_scenario(self):
+        template = (ROOT / "evaluation/RESULTS_TEMPLATE.md").read_text(encoding="utf-8")
+        for scenario in sorted((ROOT / "evaluation/scenarios").glob("S*.md")):
+            code = scenario.name.split("-", 1)[0]
+            with self.subTest(scenario=code):
+                self.assertIn(f"| {code} |", template)
+
+    def test_version_is_declared_in_one_place(self):
+        version = read_version()
+        self.assertIn(f'version = "{version}"', (ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+        for script in ["scripts/build_release.py", "scripts/validate_release.py"]:
+            with self.subTest(script=script):
+                self.assertNotIn('VERSION = "', (ROOT / script).read_text(encoding="utf-8"))
+
+    def test_chatgpt_instructions_are_self_contained(self):
+        content = (OUTPUT / "bundles/chatgpt/instructions.md").read_text(encoding="utf-8")
+        for marker in ["Never fabricate evidence", "QUICK", "DEEP", "approval", "chain-of-thought"]:
+            with self.subTest(marker=marker):
+                self.assertIn(marker, content)
+
+    def test_generic_prompt_contains_all_references(self):
+        content = (OUTPUT / "bundles/generic/OMEGA-MODUS-PROMPT.md").read_text(encoding="utf-8")
+        references = ROOT / "skills/omega-modus/references"
+        for name in ["CORE_PROTOCOL.md", "QUALITY_INTELLIGENCE.md", "SAFETY_AND_TRUST.md", "WORKFLOWS.md"]:
+            heading = (references / name).read_text(encoding="utf-8").splitlines()[0].strip()
+            with self.subTest(reference=name):
+                self.assertIn(heading, content)
 
     def test_all_release_archives_are_valid(self):
         archives = list((OUTPUT / "archives").glob("*.zip"))
